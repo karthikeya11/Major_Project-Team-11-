@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi Disease Prediction App</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <div class="background-image"></div>
+  <br><br><h1>Development of machine learning model for diagnostic disease prediction based on laboratory tests.</h1><hr>
+  <br><div class="login-container">
+    <h1>Login Page</h1>
+    <form method="post">
+        {% csrf_token %}
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+      <button type="submit">Log In</button>
+    </form>
+
+    <p class="quote">Developed by students Kitsw.</p>
+
+    </div>
+</body>
+</html>

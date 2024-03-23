@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Health Information Form</title>
+  <link rel="stylesheet" href="{% static 'style1.css' %}">
+</head>
+<body>
+<div class="background-image"></div>
+  <br><br><h1>Development of machine learning model for diagnostic disease prediction based on laboratory tests.</h1><hr>
+  <br>
+<div class="container">
+    <h1>Share Your Health Data</h1>
+    <p class="intro">Help us understand your health better by providing some basic information.</p>
+
+    <form method="post">
+        {% csrf_token %}
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="0">Male</option>
+          <option value="1">Female</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" placeholder="Enter your age">
+      </div>
+
+      <div class="form-group">
+        <label for="hemoglobin">Hemoglobin:</label>
+        <input type="text" id="hemoglobin" name="hemoglobin" placeholder="Enter your hemoglobin level">
+      </div>
+
+      <div class="form-group">
+        <label for="rbc">RBC:</label>
+        <input type="text" id="rbc" name="rbc" placeholder="Enter your RBC count">
+      </div>
+
+      <div class="form-group">
+        <label for="wbc">WBC:</label>
+        <input type="text" id="wbc" name="wbc" placeholder="Enter your WBC count">
+      </div>
+
+      <div class="form-group">
+        <label for="ast">AST (aspartate aminotransferase):</label>
+        <input type="text" id="ast" name="ast" placeholder="Enter your AST level">
+      </div>
+
+      <div class="form-group">
+        <label for="alt">ALT (alanine aminotransferase):</label>
+        <input type="text" id="alt" name="alt" placeholder="Enter your ALT level">
+      </div>
+
+      <div class="form-group">
+        <label for="cholesterol">Cholesterol:</label>
+        <input type="text" id="cholesterol" name="cholesterol" placeholder="Enter your cholesterol level">
+      </div>
+
+      <div class="form-group">
+        <label for="spirometry">Spirometry:</label>
+        <input type="text" id="spirometry" name="spirometry" placeholder="Enter your spirometry result">
+      </div>
+
+      <div class="form-group">
+        <label for="creatinine">Creatinine:</label>
+        <input type="text" id="creatinine" name="creatinine" placeholder="Enter your creatinine level">
+      </div>
+
+      <div class="form-group">
+        <label for="glucose">Glucose:</label>
+        <input type="text" id="glucose" name="glucose" placeholder="Enter your glucose level">
+      </div>
+
+      <div class="form-group">
+        <label for="lipase">Lipase:</label>
+        <input type="text" id="lipase" name="lipase" placeholder="Enter your lipase level">
+      </div>
+
+      <div class="form-group">
+        <label for="troponin">Troponin:</label>
+        <input type="text" id="troponin" name="troponin" placeholder="Enter your troponin level">
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

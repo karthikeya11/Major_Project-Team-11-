@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Health Insights</title>
+   <link rel="stylesheet" href="{% static 'style1.css' %}">
+</head>
+<body>
+  <div class="container">
+    <h1>Your Predicted Health Condition</h1>
+
+    <div class="result-box">
+      <h2>{{ predicted_disease }}</h2>
+      <p class="description">Please note that this prediction is based on the information you provided and should not be considered a definitive diagnosis. It's essential to consult with a healthcare professional for a comprehensive assessment and medical advice.</p>
+    </div>
+  </div>
+</body>
+</html>
